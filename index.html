@@ -47,10 +47,14 @@
 
             <hr>
                 <h2>any miscellaneous comments / questions / concerns that anyone would like to bring up</h2>
-                <p>
-                    Why do we need CSS and javascript when html can create the website on it's own already?<br>
-                    Although we have all the tags and elements in html, the website does not look good. With CSS and javascript, we can have better arrangement and prettier interface.
-                </p>
+                <details>
+                    <summary>Question 1</summary>
+                    <p>
+                        Why do we need CSS and javascript when html can create the website on it's own already?<br>
+                        Although we have all the tags and elements in html, the website does not look good. With CSS and javascript, we can have better arrangement and prettier interface.
+                    </p>
+                </details>
+
                 <h2>pictures of any diagrams / architecture / things that were presented</h2>
                 <img src="HTMLCheatsheet.jpg"  width="350" height="450" alt="HTML Cheatsheet"/>
         </section>
@@ -59,15 +63,49 @@
      <footer>
         <h2>audio recording</h2> 
         <audio controls>
-            <source src="../Lab2_Starter/Audio.mp3" type="audio/mp3">
+            <source src="../Lab2_Starter/Audio.mp3" type="audio/mp3"></source>
         </audio>
         <h2>video recording</h2>
         <video  width="320" height="240" controls>
-            <source src="../Lab2_Starter/Video.mp4" type="video/mp4">
+            <source src="../Lab2_Starter/Video.mp4" type="video/mp4"></source>
         </video>
         <br>
         <a href="https://www.w3schools.com/html/default.asp">More HTML tutorial!</a>
         <h3><i>Meeting ends, thank you for being here!</i></h3>
+    
+        <hr>
+        <h5>Forms</h5>
+        <form>
+            <fieldset>
+                <legend>My info:</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="Comment">Comments/thought for this meeting:</label><br>
+                <textarea id="Comment" name="Comment" rows="3" cols="40">default: N/A</textarea><br>
+
+                <label for="Language">Choose one from the list to learn more!</label>
+                <input list="Language">
+                <datalist id="Language">
+                  <option value="HTML">
+                  <option value="CSS">
+                  <option value="javascript">
+                </datalist>
+                <br>
+
+                <label for="birthdayMonth">What's your birthday month:</label>
+                <select name="birthdayMonth" id="cars">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="other">other</option>
+                </select>
+                <br>
+                <br>
+                <button type="button">Finished!</button>
+                <br>
+            </fieldset>
+          </form>
     </footer>
 
   </body>
