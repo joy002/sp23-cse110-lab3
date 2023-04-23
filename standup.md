@@ -1,4 +1,4 @@
-##Short daily standup meeting## <br>
+##Short daily standup meeting##
 Time: 9AM-10AM <br>
 
 Meeting facilitator: @joanna
