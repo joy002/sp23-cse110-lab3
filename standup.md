@@ -1,5 +1,5 @@
-Short daily standup meeting
-Time: 9AM-10AM
+Short daily standup meeting <br>
+Time: 9AM-10AM <br>
 Attendence:
 - Product owners:
 - Developers:
