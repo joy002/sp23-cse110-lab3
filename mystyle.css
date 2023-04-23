@@ -1,0 +1,31 @@
+/* Comment: This is my External CSS */
+
+h1 {
+  color: darkblue;
+  margin-left: 420px;
+}
+
+h2 {
+  color: rgb(30,60,70);
+}
+
+h3 {
+  color: #800080 
+}
+
+h5 {
+  color: hsl(300,20,30)
+}
+
+nav{
+  font-size: 1.5em;
+}
+
+.relativePath li{
+  color: white;
+  width: 10vw;
+}
+
+ol{
+  width: 100vh;
+}
