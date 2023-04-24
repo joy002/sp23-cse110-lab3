@@ -1,0 +1,198 @@
+/* Comment: This is my External CSS */
+
+/* 4 ways to specify colors */
+.Start {
+  /* Text */
+  color: darkblue;
+  text-decoration: underline;
+  text-align: center;
+  /* margin-left: 420px; */
+
+  /* Position */
+  position: sticky;
+  top: 0;
+}
+.agenda {
+  color: rgb(30,60,70);
+  /* Position */
+  position: relative;
+  left: 20px;
+}
+.date {
+  color: #800080;
+  
+  /* Position */
+  position: relative;
+  left: 20px;
+}
+/* Element Selector */
+h5 {
+  color: hsl(300,20,30)
+}
+
+/* relative units */
+nav{
+  font-size: 1.5em;
+}
+.relativePathC{
+  font-size: 2.5ex;
+}
+.relativePathJ{
+  font-size: 1.5vw;
+}
+/* absolute units */
+.absPathK{
+  font-size: 0.2in;
+}
+.absPathJ{
+  font-size: 0.5cm;
+}
+.absPathM{
+  font-size: 5mm;
+}
+
+/* Descendant Combinator */
+.abs li{
+  font-style: italic;
+}
+
+/* box model - margin */
+/* Long */
+body{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+
+  /* borders */
+  border-style: double dashed double dashed;
+  border-color: cadetblue;
+  border-width: 5px;
+  border-radius: 1cm;
+}
+/* Short: <top> <right> <bottom> <left> */
+header{
+  margin: 25px 50px 50px 20px;
+}
+/* Auto */
+.autoMargen{
+  margin: auto;
+}
+
+/* Padding */
+/* Long */
+main{
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+}
+/* Short: <top> <right> <bottom> <left>*/
+.HTMLImage{
+  padding: 25px 50px 75px 10px;
+}
+
+/* Display */
+.forDisplayE{
+  display: block;
+}
+.forDisplayS{
+  display: inline-block;
+}
+
+/* Size */
+.sizeH{
+  height: 20px;
+  max-width: 1000px;
+  min-width:200px;
+}
+.sizeS{
+  width: 100px;
+}
+
+/* flex */
+.flex-container {
+  display: flex;
+
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+}
+
+/* Child combinator */
+.flex-container > div{
+  background-color: rgb(119, 105, 171);
+  margin: 10px;
+  padding: 20px; 
+  font-size: 10px;
+}
+
+/* General sibling combinator */
+.Start ~ ol{
+  color: blue;
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+
+  justify-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+}
+.grid-container > div{
+  background-color: rgb(119, 105, 171);
+  margin: 10px;
+  padding: 20px; 
+  font-size: 10px;
+}
+
+/* Media Query */
+@media screen and (min-width: 700px) {
+  footer {
+    padding: 20px;
+    background-color: rgb(144, 238, 205);
+  }
+}
+
+/* Class Selector */
+.flexLabel{
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+/* ID Selector */
+#Comment{
+  font-family: 'Fantasy', cursive;
+}
+
+/* Universal Selector */
+* {
+  margin: 20;
+  padding: 20;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+  font-size: 10Px;
+  border: 100px;
+  padding: 5px;
+}
+
+/* Selector List */
+.item.active {
+  color: red;
+}
+.item,
+.item.active {
+  font-weight: bold;
+}
+
+/* Adjacent sibling combinator */
+hr + h5{
+  color:chocolate;
+}
+
+/* Combining Two Selectors: Adjacent Sibling Combinator(+) + General Sibling Combinator(~) */
+.agenda + #date ~ nav{
+  background-color:grey;
+}
